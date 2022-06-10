@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicles on File</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav_menu">
+            <ul>
+                <li>Sell Your Vehicle Now!</li>
+                <li><a href="/Assignment3/views/index.ejs">Home</a></li>
+                <li><a href="/Assignment3/views/enteredVehicles.ejs" class="current">List of Entered Vehicles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>List of Vehicles</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Province</th>
+            <th>Postal Code</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>JD Power and Associates Link</th>
+        </tr>
+        <% for(var vehicles of vehicles) {
+            %>
+            <tr>
+                <td><%= vehicles.firstName %></td>
+                <td><%= vehicles.lastName %></td>
+                <td><%= vehicles.address %></td>
+                <td><%= vehicles.province %></td>
+                <td><%= vehicles.postalCode %></td>
+                <td><%= vehicles.phoneNumber %></td>
+                <td><%= vehicles.email %></td>
+                <td><%= vehicles.make %></td>
+                <td><%= vehicles.model %></td>
+                <td><%= vehicles.year %></td>
+                <td><a href="<%= vehicles.webLink %>"><%= vehicles.webLink %></a></td>
+            </tr>
+            <%
+            }
+        %>
+
+    </table>
+</body>    
+<footer>
+</footer>
+</html>

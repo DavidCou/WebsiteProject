@@ -1,0 +1,75 @@
+html{ background-color: white;}	
+
+header {
+	background-color: black;
+	float: none;
+	font-size: larger;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body table {
+	border:2px solid black;
+}
+
+body th{
+	width: max-content;
+	font-size: 70%;
+	text-align: center;
+	border: 2px solid black;
+	
+}
+
+body td {
+	width: max-content;
+	font-size: 70%;
+	text-align: center;
+	border: 2px solid black;
+}
+
+#nav_menu ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 20px;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+	color: white;
+}
+
+#nav_menu ul li a {
+	display: inline;
+	width: 100px;
+	text-align: top;
+	font-size: small;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul li:hover > a {
+	text-decoration: underline;
+}
+
+#nav_menu ul li a.current {
+	color: lightgray;
+}
+
+#addVechicleButton{
+	align-self: center;
+	
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>View Added Vehicle</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav_menu">
+            <ul>
+                <li>Sell Your Vehicle Now!</li>
+                <li><a href="/Assignment3/views/index.ejs">Home</a></li>
+                <li><a href="/Assignment3/views/enteredVehicles.ejs">List of Entered Vehicles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>The Information You Entered:</h1>
+    <h3>Seller's Information</h3>
+    <p>First Name: <%= firstName %></p>
+    <p>Last Name: <%= lastName %></p>
+    <p>Address: <%= address %></p>
+    <p>City: <%= city %></p>
+    <p>Province: <%= province %></p>
+    <p>Postal Code: <%= postalCode %></p>
+    <p>Email: <%= email %></label>
+    <p>Phone number: <%= phoneNumber %></p>
+    <h3>Vehicle's Information</h3>
+    <p>Make: <%= make %></p>
+    <p>Model: <%= model %></p>
+    <P>Year: <%= year %></p>
+    <p>JD Power and Associates Page: <a href="<%= webLink %>"><%= webLink %></a></p>
+</body>
+<footer>
+</footer>
+</html>
